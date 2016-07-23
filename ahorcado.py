@@ -1,5 +1,9 @@
 import funciones
+import random
 print("Bienvenido!")
-random.choice(palabras)
-palabras= []
-print (len(palabra) * "_")
+num = random.randint(0,2)
+palabras= ["hola", "Queso", "papa"]
+palabra= palabras[num]
+print (len(palabra) * "_ ")
+
+ muñequito= [" ___________" , "|          |" , "|        \( )/" , "|          |", "|         / \ " , "_|_"]
