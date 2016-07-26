@@ -1,9 +1,13 @@
 import funciones
 import random
 print("Bienvenido!")
-num = random.randint(0,2)
-palabras= ["hola", "Queso", "papa"]
-palabra= palabras[num]
-print (len(palabra) * "_ ")
+lista_variables= []
+num = random.randint(0, 99)
+print(len(funciones.palabra(num)) * "_ ")
 
- muñequito= [" ___________" , "|          |" , "|        \( )/" , "|          |", "|         / \ " , "_|_"]
+munequito= [" _________" , " |        |" , " |" , " |" , " |" , "_|_"]
+
+for i in munequito:
+ 	print(i)
+
+ letra= input("Ingrese una letra: ")	
