@@ -1,13 +1,14 @@
 import funciones
 import random
-print("Bienvenido!")
-lista_variables= []
+print("Bienvenido")
 num = random.randint(0, 99)
-print(len(funciones.palabra(num)) * "_ ")
+palabra= funciones.palabra(num)
+espacios= (len(palabra) * "_ ")
+print(espacios)
 
-munequito= [" _________" , " |        |" , " |" , " |" , " |" , "_|_"]
+letra= input("Ingrese una letra: ")	
 
-for i in munequito:
- 	print(i)
+for i in palabra:
+	if i == letra:
+		espacios=  
 
- letra= input("Ingrese una letra: ")	
