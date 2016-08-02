@@ -1,8 +1,8 @@
 import funciones
 import random
 print("Bienvenido a Ahorcado.")
-num = random.randint(0, 99)
-palabra_elegida= funciones.palabra(num)
+aleatorio = random.randint(0, 150)
+palabra_elegida= funciones.palabra(aleatorio)
 palabra= list(palabra_elegida)
 guiones= []
 intento = 0
@@ -21,7 +21,6 @@ while intento < 7:
 			if palabra[i] == letra: 
 				guiones[i] = letra
 				if palabra == guiones:
-					print(guiones)
 					print("")
 					print("Felicidades, Ganaste.")
 					intento = 7
