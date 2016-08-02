@@ -21,6 +21,7 @@ while intento < 7:
 			if palabra[i] == letra: 
 				guiones[i] = letra
 				if palabra == guiones:
+					print(" ".join(guiones))
 					print("")
 					print("Felicidades, Ganaste.")
 					intento = 7
