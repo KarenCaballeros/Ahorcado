@@ -21,6 +21,7 @@ while intento < 7:
 			if palabra[i] == letra: 
 				guiones[i] = letra
 				if palabra == guiones:
+					print("")
 					print(" ".join(guiones))
 					print("")
 					print("Felicidades, Ganaste.")
@@ -28,6 +29,7 @@ while intento < 7:
 
 	else: 
 		print("")
+		print("Fallaste.")
 		print(funciones.muneco(intento))
 		intento= intento + 1
 		if intento == 7:
