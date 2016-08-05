@@ -5,7 +5,6 @@ aleatorio = random.randint(0, 150)
 palabra_elegida= funciones.palabra(aleatorio)
 palabra= list(palabra_elegida)
 guiones= []
-intento = 0
 letras_usadas= []
 
 for i in palabra:
@@ -14,7 +13,8 @@ for i in palabra:
 repetir_jugada = 1	
 
 while repetir_jugada == 1:
-	while intento < 7:
+	contador_intento = 0
+	while contador_intento < 7:
 		print("")
 		print(" ".join(guiones))
 		print("")
@@ -32,15 +32,15 @@ while repetir_jugada == 1:
 							print(" ".join(guiones))
 							print("")
 							print("Felicidades, Ganaste.")
-							intento = 7
+							contador_intento = 7
 
 			else: 
 				print("")
 				print("Fallaste.")
-				print(funciones.muneco(intento))
+				print(funciones.muneco(contador_intento))
 				letras_usadas.append(letra)
-				intento= intento + 1
-				if intento == 7:
+				contador_intento= contador_intento + 1
+				if contador_intento == 7:
 					print("Perdiste, la palabra era: " , palabra_elegida)	
 
 	print("")			
