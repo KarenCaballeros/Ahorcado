@@ -1,19 +1,20 @@
 import funciones
 import random
 print("Bienvenido a Ahorcado.")
-aleatorio = random.randint(0, 150)
-palabra_elegida= funciones.palabra(aleatorio)
-palabra= list(palabra_elegida)
-guiones= []
-letras_usadas= []
 
-for i in palabra:
-	guiones.append("_ ")
 
 repetir_jugada = 1	
 
 while repetir_jugada == 1:
 	contador_intento = 0
+	aleatorio = random.randint(0, 150)
+	palabra_elegida= funciones.palabra(aleatorio)
+	palabra= list(palabra_elegida)
+	guiones= []
+	letras_usadas= []
+	for i in palabra:
+		guiones.append("_ ")
+	
 	while contador_intento < 7:
 		print("")
 		print(" ".join(guiones))
